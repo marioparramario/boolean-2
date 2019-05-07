@@ -1,0 +1,138 @@
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-transition: border-box;
+  -moz-transition: border-box;
+  transition: border-box;
+  box-sizing: border-box;
+}
+* {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+}
+body {
+  height: 100%;
+  font-family: 'Mark';
+  color: #15182E;
+  background: white;
+  text-rendering: optimizeLegibility;
+  font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
+}
+.sticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky;
+  top: 0;
+}
+section {
+  height: 100%;
+  min-height: 100vh;
+}
+.fill {
+  width: 100%;
+  height: 100vh;
+  background: #888D9D;
+}
+.fill h1 {
+  color: white;
+}
+a {
+  font-family: 'Space Mono', monospace;
+  color: blue;
+  text-decoration: none;
+}
+img {
+  width: 100%;
+}
+h1 {
+  font-size: 3.8rem;
+  line-height: 1;
+  margin-bottom: 1.8rem;
+}
+h2 {
+  font-size: 2.1rem;
+  line-height: 1;
+}
+.st0 {
+  fill: #158AFF;
+}
+.st1 {
+  fill: #FD7DA1;
+}
+.st2 {
+  fill: #06376C;
+}
+.st3 {
+  fill: #FFFFFF;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  top: 0;
+  left: 0;
+  padding: 0 30px;
+  z-index: 9;
+}
+.nav::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+}
+.nav-logo {
+  width: 100px;
+}
+.nav-menu a {
+  position: relative;
+  color: #888D9D;
+  padding-left: 50px;
+}
+.nav-menu a.active {
+  color: #4756E2;
+}
+.nav-menu a.active::before {
+  background: #4756E2;
+}
+.nav-menu a::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: calc(50% - 1px);
+  width: 22px;
+  height: 1px;
+  background: #888D9D;
+}
+.main-column {
+  width: 50vw;
+  padding: 160px 92px 92px;
+}
+.main-column.image {
+  background: #210831;
+  height: 100vh;
+  background-image: url('../images/angular.png');
+  background-position: 50% 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.main-column .landing {
+  height: 100vh;
+}
+.main-column p {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+}
