@@ -161,6 +161,7 @@ h2 {
   margin-right: 32px;
 }
 .footer-social {
+  height: 100%;
   text-align: right;
 }
 .footer a {
@@ -177,7 +178,7 @@ h2 {
   font-size: 0.8rem;
 }
 .footer svg {
-  height: 24px;
+  height: 26px;
 }
 .footer .icon-container {
   margin-top: 6px;
@@ -186,5 +187,5 @@ h2 {
   fill: white;
 }
 .footer .icon-container svg {
-  margin-left: 4px;
+  margin-left: 6px;
 }
