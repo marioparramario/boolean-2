@@ -75,6 +75,9 @@ h2 {
 .st1{fill:#FD7DA1;}
 .st2{fill:#06376C;}
 .st3{fill:#FFFFFF;}
+.footer-0{fill:#888D9D;}
+.footer-1{fill:#AAB0C2;}
+.footer-2{fill:#444857;}
 
 .nav {
   position: fixed;
@@ -140,6 +143,50 @@ h2 {
     p {
       font-size: 1.3rem;
       margin-top: 1.5rem;
+    }
+  }
+}
+.footer {
+  color: white;
+  background: @dark-grey;
+  padding: 60px 40px;
+  &-container {
+    width: 100%;
+  }
+  &-column {
+    width: 50%;
+  }
+  &-logo {
+    height: 72px !important;
+    margin-right: 32px;
+  }
+  &-social {
+    text-align: right;
+  }
+  a {
+    font-size: 1.2rem;
+    font-family: @mark;
+    color: white;
+    margin-bottom: 6px;
+  }
+  span {
+    font-family: @spacemono;
+    font-size: 0.78rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  svg {
+    height: 24px;
+  }
+
+  .icon-container {
+    margin-top: 6px;
+    path {
+      fill: white;
+    }
+    svg {
+      margin-left: 4px;
     }
   }
 }
