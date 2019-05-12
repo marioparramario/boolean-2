@@ -128,7 +128,6 @@ h2 {
 }
 .main-column {
   width: 50vw;
-  padding: 160px 92px 92px;
 }
 .main-column.image {
   background: #210831;
@@ -140,6 +139,78 @@ h2 {
 }
 .main-column .landing {
   height: 100vh;
+  margin: 0 72px;
+  padding-top: 160px;
+}
+.main-column .landing-info {
+  margin-top: 4rem;
+  color: #444857;
+  text-align: right;
+}
+.main-column .landing-info span {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.8rem;
+}
+.main-column .landing-info .price {
+  color: #4756E2;
+  font-weight: bold;
+  font-family: 'MarkWebW03';
+}
+.main-column .course {
+  padding: 96px 50px;
+  background: #bac0d4;
+}
+.main-column .course .day {
+  position: relative;
+  padding-left: 48px;
+  margin-bottom: 72px;
+}
+.main-column .course .day::after {
+  content: '';
+  position: absolute;
+  background: white;
+  left: 24px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+}
+.main-column .course .day:nth-of-type(2) p::before {
+  content: 'Dia 2';
+}
+.main-column .course .day:nth-of-type(3) p::before {
+  content: 'Dia 3';
+}
+.main-column .course .day:nth-of-type(4) p::before {
+  content: 'Dia 4';
+}
+.main-column .course .day:nth-of-type(5) p::before {
+  content: 'Dia 5';
+}
+.main-column .course .day:nth-of-type(6) p::before {
+  content: 'Dia 6';
+}
+.main-column .course h2 {
+  font-size: 2.6rem;
+  color: white;
+  margin-bottom: 48px;
+}
+.main-column .course h3 {
+  font-size: 1.8rem;
+  color: #444857;
+}
+.main-column .course p {
+  position: relative;
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+.main-column .course p::before {
+  font-family: 'Space Mono', monospace;
+  content: 'Dia 1';
+  position: absolute;
+  transform: rotate(-90deg);
+  color: #4756E2;
+  left: -68px;
+  top: -30px;
 }
 .main-column p {
   font-size: 1.3rem;

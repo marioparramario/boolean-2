@@ -128,7 +128,7 @@ h2 {
   }
   &-column {
     width: 50vw;
-    padding: 160px 92px 92px;
+
     &.image {
       background: @dark-purple;
       height: 100vh;
@@ -139,6 +139,93 @@ h2 {
     }
     .landing {
       height: 100vh;
+      margin: 0 72px;
+      padding-top: 160px;
+      &-headlines {
+
+      }
+      &-info {
+        margin-top: 4rem;
+        color: @almost-dark-blue;
+        text-align: right;
+        span {
+          font-family: @spacemono;
+          font-size: 0.8rem;
+        }
+        .price {
+          color: @purple;
+          font-weight: bold;
+          font-family: 'MarkWebW03';
+        }
+      }
+    }
+    .course {
+      padding: 96px 50px;
+      background: @light-grey;
+      .day {
+        position: relative;
+        padding-left: 48px;
+        margin-bottom: 72px;
+        &::after {
+          content: '';
+          position: absolute;
+          background: white;
+          left: 24px;
+          top: 0;
+          width: 4px;
+          height: 100%;
+        }
+        &:nth-of-type(2) {
+          p::before {
+            content: 'Dia 2';
+          }
+        }
+        &:nth-of-type(3) {
+          p::before {
+            content: 'Dia 3';
+          }
+        }
+        &:nth-of-type(4) {
+          p::before {
+            content: 'Dia 4';
+          }
+        }
+        &:nth-of-type(5) {
+          p::before {
+            content: 'Dia 5';
+          }
+        }
+        &:nth-of-type(6) {
+          p::before {
+            content: 'Dia 6';
+          }
+        }
+      }
+      h2 {
+        font-size: 2.6rem;
+        color: white;
+        margin-bottom: 48px;
+      }
+      h3 {
+        font-size: 1.8rem;
+        color: @almost-dark-blue;
+      }
+      p {
+        position: relative;
+        margin-top: 8px;
+        font-size: 1.1rem;
+        &::before {
+          font-family: @spacemono;
+          content: 'Dia 1';
+          position: absolute;
+          transform: rotate(-90deg);
+          color: @purple;
+          left: -68px;
+          top: -30px;
+
+        }
+
+      }
     }
     p {
       font-size: 1.3rem;
