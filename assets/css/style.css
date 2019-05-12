@@ -1,90 +1,87 @@
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   margin: 0;
   padding: 0;
   -webkit-transition: border-box;
   -moz-transition: border-box;
   transition: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
+
 * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
-  -webkit-user-drag: none;
-}
+  -webkit-user-drag: none; }
+
 body {
   height: 100%;
-  font-family: 'Mark';
+  font-family: "Mark";
   color: #15182E;
   background: white;
   text-rendering: optimizeLegibility;
   font-smooth: always;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-tap-highlight-color: transparent;
-}
+  -webkit-tap-highlight-color: transparent; }
+
 .sticky {
   position: -webkit-sticky;
   position: -moz-sticky;
   position: -ms-sticky;
   position: -o-sticky;
   position: sticky;
-  top: 0;
-}
+  top: 0; }
+
 section {
   height: 100%;
-  min-height: 100vh;
-}
+  min-height: 100vh; }
+
 .fill {
   width: 100%;
   height: 100vh;
-  background: #888D9D;
-}
-.fill h1 {
-  color: white;
-}
+  background: #888D9D; }
+  .fill h1 {
+    color: white; }
+
 a {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   color: blue;
-  text-decoration: none;
-}
+  text-decoration: none; }
+
 img {
-  width: 100%;
-}
+  width: 100%; }
+
 h1 {
   font-size: 3.8rem;
   line-height: 1;
-  margin-bottom: 1.8rem;
-}
+  margin-bottom: 1.8rem; }
+
 h2 {
   font-size: 2.1rem;
-  line-height: 1;
-}
+  line-height: 1; }
+
 .st0 {
-  fill: #158AFF;
-}
+  fill: #158AFF; }
+
 .st1 {
-  fill: #FD7DA1;
-}
+  fill: #FD7DA1; }
+
 .st2 {
-  fill: #06376C;
-}
+  fill: #06376C; }
+
 .st3 {
-  fill: #FFFFFF;
-}
+  fill: #FFFFFF; }
+
 .footer-0 {
-  fill: #888D9D;
-}
+  fill: #888D9D; }
+
 .footer-1 {
-  fill: #AAB0C2;
-}
+  fill: #AAB0C2; }
+
 .footer-2 {
-  fill: #444857;
-}
+  fill: #444857; }
+
 .nav {
   position: fixed;
   width: 100%;
@@ -92,171 +89,135 @@ h2 {
   top: 0;
   left: 0;
   padding: 0 30px;
-  z-index: 9;
-}
-.nav::before {
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  height: 100%;
-  background: white;
-}
-.nav-logo {
-  width: 100px;
-}
-.nav-menu a {
-  position: relative;
-  color: #888D9D;
-  padding-left: 50px;
-}
-.nav-menu a.active {
-  color: #4756E2;
-}
-.nav-menu a.active::before {
-  background: #4756E2;
-}
-.nav-menu a::before {
-  content: '';
-  position: absolute;
-  left: 18px;
-  top: calc(50% - 1px);
-  width: 22px;
-  height: 1px;
-  background: #888D9D;
-}
+  z-index: 9; }
+  .nav::before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: white; }
+  .nav-logo {
+    width: 100px; }
+  .nav-menu a {
+    position: relative;
+    color: #888D9D;
+    padding-left: 50px; }
+    .nav-menu a.active {
+      color: #4756E2; }
+      .nav-menu a.active::before {
+        background: #4756E2; }
+    .nav-menu a::before {
+      content: '';
+      position: absolute;
+      left: 18px;
+      top: calc(50% - 1px);
+      width: 22px;
+      height: 1px;
+      background: #888D9D; }
+
 .main-column {
-  width: 50vw;
-}
-.main-column.image {
-  background: #210831;
-  height: 100vh;
-  background-image: url('../images/angular.png');
-  background-position: 50% 50%;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-.main-column .landing {
-  height: 100vh;
-  margin: 0 72px;
-  padding-top: 160px;
-}
-.main-column .landing-info {
-  margin-top: 4rem;
-  color: #444857;
-  text-align: right;
-}
-.main-column .landing-info span {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.8rem;
-}
-.main-column .landing-info .price {
-  color: #4756E2;
-  font-weight: bold;
-  font-family: 'MarkWebW03';
-}
-.main-column .course {
-  padding: 96px 50px;
-  background: #d6dae8;
-}
-.main-column .course .day {
-  position: relative;
-  padding-left: 48px;
-  margin-bottom: 72px;
-}
-.main-column .course .day::after {
-  content: '';
-  position: absolute;
-  background: white;
-  left: 24px;
-  top: 0;
-  width: 4px;
-  height: 100%;
-}
-.main-column .course .day:nth-of-type(2) p::before {
-  content: 'Dia 2';
-}
-.main-column .course .day:nth-of-type(3) p::before {
-  content: 'Dia 3';
-}
-.main-column .course .day:nth-of-type(4) p::before {
-  content: 'Dia 4';
-}
-.main-column .course .day:nth-of-type(5) p::before {
-  content: 'Dia 5';
-}
-.main-column .course .day:nth-of-type(6) p::before {
-  content: 'Dia 6';
-}
-.main-column .course h2 {
-  font-size: 2.6rem;
-  color: white;
-  margin-bottom: 48px;
-}
-.main-column .course h3 {
-  font-size: 1.8rem;
-  color: #444857;
-}
-.main-column .course p {
-  position: relative;
-  margin-top: 8px;
-  font-size: 1.1rem;
-}
-.main-column .course p::before {
-  font-family: 'Space Mono', monospace;
-  content: 'Dia 1';
-  position: absolute;
-  transform: rotate(-90deg);
-  color: #4756E2;
-  left: -68px;
-  top: -30px;
-}
-.main-column p {
-  font-size: 1.3rem;
-  margin-top: 1.5rem;
-}
+  width: 50vw; }
+  .main-column.image {
+    background: #210831;
+    height: 100vh;
+    background-image: url("../images/angular.png");
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .main-column .landing {
+    height: 100vh;
+    margin: 0 72px;
+    padding-top: 160px; }
+    .main-column .landing-info {
+      margin-top: 4rem;
+      color: #444857;
+      text-align: right; }
+      .main-column .landing-info span {
+        font-family: "Space Mono", monospace;
+        font-size: 0.8rem; }
+      .main-column .landing-info .price {
+        color: #4756E2;
+        font-weight: bold;
+        font-family: 'MarkWebW03'; }
+  .main-column .course {
+    padding: 96px 50px;
+    background: #d6dae8; }
+    .main-column .course .day {
+      position: relative;
+      padding-left: 48px;
+      margin-bottom: 72px; }
+      .main-column .course .day::after {
+        content: '';
+        position: absolute;
+        background: white;
+        left: 24px;
+        top: 0;
+        width: 4px;
+        height: 100%; }
+      .main-column .course .day:nth-of-type(2) p::before {
+        content: 'Dia 2'; }
+      .main-column .course .day:nth-of-type(3) p::before {
+        content: 'Dia 3'; }
+      .main-column .course .day:nth-of-type(4) p::before {
+        content: 'Dia 4'; }
+      .main-column .course .day:nth-of-type(5) p::before {
+        content: 'Dia 5'; }
+      .main-column .course .day:nth-of-type(6) p::before {
+        content: 'Dia 6'; }
+    .main-column .course h2 {
+      font-size: 2.6rem;
+      color: white;
+      margin-bottom: 48px; }
+    .main-column .course h3 {
+      font-size: 1.8rem;
+      color: #444857; }
+    .main-column .course p {
+      position: relative;
+      margin-top: 8px;
+      font-size: 1.1rem; }
+      .main-column .course p::before {
+        font-family: "Space Mono", monospace;
+        content: 'Dia 1';
+        position: absolute;
+        transform: rotate(-90deg);
+        color: #4756E2;
+        left: -68px;
+        top: -30px; }
+  .main-column p {
+    font-size: 1.3rem;
+    margin-top: 1.5rem; }
+
 .footer {
   color: white;
   background: #282A35;
-  padding: 60px 40px;
-}
-.footer-container {
-  width: 100%;
-}
-.footer-column {
-  width: 50%;
-}
-.footer-logo {
-  height: 72px !important;
-  margin-right: 32px;
-}
-.footer-social {
-  height: 100%;
-  text-align: right;
-}
-.footer a {
-  font-size: 1.2rem;
-  font-family: 'Mark';
-  color: white;
-  margin-bottom: 6px;
-}
-.footer span {
-  font-family: 'Space Mono', monospace;
-  font-size: 0.78rem;
-}
-.footer p {
-  font-size: 0.8rem;
-}
-.footer svg {
-  height: 26px;
-}
-.footer .icon-container {
-  margin-top: 6px;
-}
-.footer .icon-container path {
-  fill: white;
-}
-.footer .icon-container svg {
-  margin-left: 6px;
-}
+  padding: 60px 40px; }
+  .footer-container {
+    width: 100%; }
+  .footer-column {
+    width: 50%; }
+  .footer-logo {
+    height: 72px !important;
+    margin-right: 32px; }
+  .footer-social {
+    height: 100%;
+    text-align: right; }
+  .footer a {
+    font-size: 1.2rem;
+    font-family: "Mark";
+    color: white;
+    margin-bottom: 6px; }
+  .footer span {
+    font-family: "Space Mono", monospace;
+    font-size: 0.78rem; }
+  .footer p {
+    font-size: 0.8rem; }
+  .footer svg {
+    height: 26px; }
+  .footer .icon-container {
+    margin-top: 6px; }
+    .footer .icon-container path {
+      fill: white; }
+    .footer .icon-container svg {
+      margin-left: 6px; }

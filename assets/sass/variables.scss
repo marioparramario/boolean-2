@@ -1,0 +1,53 @@
+// Colours
+$dark-blue: #15182E;
+$dark-purple: #210831;
+$dark-grey: #282A35;
+$grey: #888D9D;
+$purple: #4756E2;
+$blue: #132193;
+$red: #FF7485;
+$almost-dark-blue: #444857;
+// $light-grey: #bac0d4;
+$light-grey: #d6dae8;
+
+// Fonts
+$mark: 'Mark';
+$spacemono: 'Space Mono', monospace;
+
+
+// Breakpoints
+$desktop: 1280px;
+$tablet: 991px;
+$small-tablet: 767px;
+$phone: 479px;
+
+// Elements
+
+@mixin transition-properties(...){
+  -webkit-transition: $arguments;
+  -moz-transition: $arguments;
+  -ms-transition: $arguments;
+  -o-transition: $arguments;
+  transition: $arguments;
+}
+@mixin transform-properties(...){
+  -webkit-transform: $arguments;
+  -moz-transform: $arguments;
+  -ms-transform: $arguments;
+  -o-transform: $arguments;
+  transform: $arguments;
+}
+@mixin animation-properties(...){
+  -webkit-animation: $arguments;
+  -moz-animation: $arguments;
+  -ms-animation: $arguments;
+  -o-animation: $arguments;
+  animation: $arguments;
+}
+@mixin filter-properties(...){
+  -webkit-filter: $arguments;
+  -moz-filter: $arguments;
+  -ms-filter: $arguments;
+  -o-filter: $arguments;
+  filter: $arguments;
+}
