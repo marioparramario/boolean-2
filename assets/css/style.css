@@ -53,12 +53,12 @@ img {
   width: 100%; }
 
 h1 {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   line-height: 1;
   margin-bottom: 1.8rem; }
 
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   line-height: 1; }
 
 .st0 {
@@ -127,20 +127,29 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat; }
   .main-column .landing {
-    height: 100vh;
-    margin: 0 72px;
-    padding-top: 160px; }
+    height: 100%;
+    min-height: 100vh;
+    margin: 0 8%; }
+    .main-column .landing-container {
+      padding-top: 4.5rem; }
     .main-column .landing-info {
       margin-top: 4rem;
       color: #444857;
       text-align: right; }
+      .main-column .landing-info h3 {
+        font-size: 1.5rem; }
       .main-column .landing-info span {
         font-family: "Space Mono", monospace;
-        font-size: 0.8rem; }
+        font-size: 1rem; }
       .main-column .landing-info .price {
         color: #4756E2;
         font-weight: bold;
         font-family: 'MarkWebW03'; }
+        .main-column .landing-info .price span {
+          font-family: 'Mark';
+          font-size: 1.5rem;
+          margin-left: 6px;
+          letter-spacing: 0.1rem; }
   .main-column .course {
     padding: 96px 50px;
     background: #d6dae8; }
@@ -156,15 +165,15 @@ h2 {
         top: 0;
         width: 4px;
         height: 100%; }
-      .main-column .course .day:nth-of-type(2) p::before {
+      .main-column .course .day:nth-of-type(2) ul::before {
         content: 'Dia 2'; }
-      .main-column .course .day:nth-of-type(3) p::before {
+      .main-column .course .day:nth-of-type(3) ul::before {
         content: 'Dia 3'; }
-      .main-column .course .day:nth-of-type(4) p::before {
+      .main-column .course .day:nth-of-type(4) ul::before {
         content: 'Dia 4'; }
-      .main-column .course .day:nth-of-type(5) p::before {
+      .main-column .course .day:nth-of-type(5) ul::before {
         content: 'Dia 5'; }
-      .main-column .course .day:nth-of-type(6) p::before {
+      .main-column .course .day:nth-of-type(6) ul::before {
         content: 'Dia 6'; }
     .main-column .course h2 {
       font-size: 2.6rem;
@@ -173,11 +182,11 @@ h2 {
     .main-column .course h3 {
       font-size: 1.8rem;
       color: #444857; }
-    .main-column .course p {
+    .main-column .course ul {
       position: relative;
       margin-top: 8px;
       font-size: 1.1rem; }
-      .main-column .course p::before {
+      .main-column .course ul::before {
         font-family: "Space Mono", monospace;
         content: 'Dia 1';
         position: absolute;
@@ -185,8 +194,10 @@ h2 {
         color: #4756E2;
         left: -68px;
         top: -30px; }
+    .main-column .course li {
+      list-style: none; }
   .main-column p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     margin-top: 1.5rem; }
 
 .footer {
@@ -221,3 +232,19 @@ h2 {
       fill: white; }
     .footer .icon-container svg {
       margin-left: 6px; }
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: 3.8rem; }
+  h2 {
+    font-size: 2.1rem; }
+  .main-column .landing {
+    margin: 0 10%; }
+    .main-column .landing-info h3 {
+      font-size: 1.3rem; }
+    .main-column .landing-info span {
+      font-size: 0.8rem; }
+    .main-column .landing-info .price span {
+      font-size: 1rem; }
+  .main-column p {
+    font-size: 1.3rem; } }

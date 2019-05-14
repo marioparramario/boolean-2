@@ -63,12 +63,12 @@ img {
   width: 100%;
 }
 h1 {
-  font-size: 3.8rem;
+  font-size: 4.2rem;
   line-height: 1;
   margin-bottom: 1.8rem;
 }
 h2 {
-  font-size: 2.1rem;
+  font-size: 2.4rem;
   line-height: 1;
 }
 .st0{fill:#158AFF;}
@@ -128,7 +128,6 @@ h2 {
   }
   &-column {
     width: 50vw;
-
     &.image {
       background: $dark-purple;
       height: 100vh;
@@ -138,24 +137,35 @@ h2 {
       background-repeat: no-repeat;
     }
     .landing {
-      height: 100vh;
-      margin: 0 72px;
-      padding-top: 160px;
+      height: 100%;
+      min-height: 100vh;
+      margin: 0 8%;
+      &-container {
+        padding-top: 4.5rem;
+      }
       &-headlines {
-
       }
       &-info {
         margin-top: 4rem;
         color: $almost-dark-blue;
         text-align: right;
+        h3 {
+          font-size: 1.5rem;
+        }
         span {
           font-family: $spacemono;
-          font-size: 0.8rem;
+          font-size: 1rem;
         }
         .price {
           color: $purple;
           font-weight: bold;
           font-family: 'MarkWebW03';
+          span {
+            font-family: 'Mark';
+            font-size: 1.5rem;
+            margin-left: 6px;
+            letter-spacing: 0.1rem;
+          }
         }
       }
     }
@@ -176,27 +186,27 @@ h2 {
           height: 100%;
         }
         &:nth-of-type(2) {
-          p::before {
+          ul::before {
             content: 'Dia 2';
           }
         }
         &:nth-of-type(3) {
-          p::before {
+          ul::before {
             content: 'Dia 3';
           }
         }
         &:nth-of-type(4) {
-          p::before {
+          ul::before {
             content: 'Dia 4';
           }
         }
         &:nth-of-type(5) {
-          p::before {
+          ul::before {
             content: 'Dia 5';
           }
         }
         &:nth-of-type(6) {
-          p::before {
+          ul::before {
             content: 'Dia 6';
           }
         }
@@ -210,7 +220,7 @@ h2 {
         font-size: 1.8rem;
         color: $almost-dark-blue;
       }
-      p {
+    ul {
         position: relative;
         margin-top: 8px;
         font-size: 1.1rem;
@@ -222,13 +232,14 @@ h2 {
           color: $purple;
           left: -68px;
           top: -30px;
-
         }
-
+      }
+      li {
+        list-style: none;
       }
     }
     p {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
       margin-top: 1.5rem;
     }
   }
@@ -280,6 +291,37 @@ h2 {
 }
 
 @media (max-width: $desktop) {
+  h1 {
+    font-size: 3.8rem;
+  }
+  h2 {
+    font-size: 2.1rem;
+  }
+  .main {
+    &-column {
+      .landing {
+        margin: 0 10%;
+        &-headlines {
+        }
+        &-info {
+          h3 {
+            font-size: 1.3rem;
+          }
+          span {
+            font-size: 0.8rem;
+          }
+          .price {
+            span {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
 
 }
 
