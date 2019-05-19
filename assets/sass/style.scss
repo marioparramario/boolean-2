@@ -120,6 +120,11 @@ h2 {
         background: $grey;
       }
     }
+    &-icon {
+      display: none;
+      width: 40px;
+      height: 40px
+    }
   }
 }
 
@@ -131,7 +136,7 @@ h2 {
     &.image {
       background: $dark-purple;
       height: 100vh;
-      background-image: url('../images/angular.png');
+      background-image: url('../images/angular.svg');
       background-position: 50% 50%;
       background-size: contain;
       background-repeat: no-repeat;
@@ -326,12 +331,109 @@ h2 {
 }
 
 @media (max-width: $tablet) {
-
+  h1 {
+    font-size: 3.1rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .nav {
+    &-menu {
+      a {
+        font-size: 0.9rem;
+        padding-left: 46px;
+        &::before {
+          width: 18px;
+        }
+      }
+    }
+  }
+  .main-column {
+    width: 55vw;
+    &.image {
+      width: 45vw;
+      background-size: cover;
+    }
+    .landing {
+      margin: 0 8%;
+      &-info h3 {
+        font-size: 1.2rem;
+      }
+    }
+    p {
+      font-size: 1.2rem;
+    }
+  }
 }
 @media (max-width: $small-tablet) {
-
+  .nav {
+    &::before {
+      content: none;
+    }
+    &-menu {
+      display: none;
+      &-icon {
+        display: block;
+      }
+    }
+  }
+  .main {
+    &-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    &-column {
+      width: 100vw;
+      &.image {
+        width: 100vw;
+        position: relative;
+        height: 50vh;
+        max-height: 420px;
+      }
+      .landing {
+        min-height: auto;
+        margin: 0 5%;;
+        &-container {
+          padding: 4.5rem 0;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: $phone) {
-
+  h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 1.6rem;
+  }
+  .nav {
+    height: 60px;
+    padding: 0 20px;
+    &-logo {
+      width: 80px;
+    }
+  }
+  .main {
+    &-column {
+      &.image {
+        height: 40vh;
+        max-height: 320px;
+      }
+      .landing {
+        margin: 0 28px;
+        &-container {
+          padding: 40px 0;
+        }
+      }
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
 }
