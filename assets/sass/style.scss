@@ -46,14 +46,7 @@ section {
   height: 100%;
   min-height: 100vh;
 }
-.fill {
-  width: 100%;
-  height: 100vh;
-  background: $grey;
-  h1 {
-    color: white;
-  }
-}
+
 a {
   font-family: $spacemono;
   color: blue;
@@ -249,6 +242,36 @@ h2 {
     }
   }
 }
+.further {
+  width: 100%;
+  min-height: auto;
+  margin: 100px 0;
+  color: $almost-dark-blue;
+  &-column {
+    width: 50%;
+    &:nth-of-type(2) {
+      a {
+        color: $red;
+      }
+    }
+  }
+  img {
+    width: 160px;
+  }
+  &-text {
+    padding-left: 20px;
+  }
+  h2 {
+    font-size: 1.9rem;
+    margin-bottom: 4px;
+    max-width: 420px;
+  }
+  a {
+    font-size: 0.9rem;
+    color: $purple;
+    text-decoration: underline;
+  }
+}
 .footer {
   color: white;
   background: $dark-grey;
@@ -283,7 +306,6 @@ h2 {
   svg {
     height: 26px;
   }
-
   .icon-container {
     margin-top: 6px;
     path {
@@ -322,12 +344,29 @@ h2 {
           }
         }
       }
+      .course {
+        padding: 60px 40px;
+      }
       p {
         font-size: 1.3rem;
       }
     }
   }
-
+  .further {
+    img {
+      width: 140px;
+    }
+    &-text {
+      padding-left: 12px;
+    }
+    h2 {
+      font-size: 1.5rem;
+      max-width: 300px;
+    }
+    a {
+      font-size: 0.85rem;
+    }
+  }
 }
 
 @media (max-width: $tablet) {
@@ -362,6 +401,56 @@ h2 {
     }
     p {
       font-size: 1.2rem;
+    }
+    .course {
+
+      h2 {
+        font-size: 2rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+      ul {
+        font-size: 1rem;
+        &::before {
+          left: -60px;
+          font-size: 0.9rem;
+        }
+      }
+      .day {
+        padding-left: 34px;
+        margin-bottom: 50px;
+        &::after {
+          left: 14px;
+          width: 3px;
+        }
+      }
+    }
+  }
+  .further {
+    &-column {
+      padding: 0 24px;
+    }
+    img {
+      width: 100px;
+    }
+    &-text {
+      padding-left: 10px;
+    }
+    h2 {
+      font-size: 1.4rem;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+  }
+  .footer {
+    &-logo {
+      height: 64px !important;
+      margin-right: 24px;
+    }
+    a {
+      font-size: 1.1rem;
     }
   }
 }
@@ -402,6 +491,65 @@ h2 {
       }
     }
   }
+  .further {
+    margin: 60px 0;
+    padding: 0 10%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    &-column {
+      width: 100%;
+      margin-bottom: 40px;
+      padding: 0;
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
+    img {
+      width: 100px;
+    }
+    &-text {
+      padding-left: 10px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      max-width: none;
+    }
+    a {
+      font-size: 0.8rem;
+    }
+  }
+  .footer {
+    &-container {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+    }
+    &-column {
+      width: 100%;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom:  0;
+      }
+    }
+    &-social {
+      text-align: left;
+    }
+    .icon-container {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+      svg:first-child {
+        margin: 0;
+      }
+    }
+  }
 }
 
 @media (max-width: $phone) {
@@ -434,6 +582,70 @@ h2 {
       p {
         font-size: 1rem;
       }
+      .course {
+        padding: 50px 8%;
+        h2 {
+          font-size: 1.6rem;
+          margin-bottom: 30px;
+        }
+        h3 {
+          font-size: 1.4rem;
+          line-height: 1;
+        }
+        ul {
+          font-size: 0.9rem;
+          &::before {
+            left: -46px;
+            font-size: 0.8rem;
+            top: -40px;
+          }
+        }
+        .day {
+          padding-left: 24px;
+          &::after {
+            width: 2px;
+            left: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  .further {
+    padding: 0 6%;
+    &-column:last-child {
+      margin: 0;
+    }
+    img {
+      width: 80px;
+    }
+  }
+  .footer {
+    padding: 40px 8%;
+    &-column {
+      margin-bottom: 32px;
+    }
+    &-logo {
+      height: 58px !important;
+      margin-right: 18px;
+    }
+    span {
+      font-size: 0.7rem;
+    }
+    &-info {
+      span {
+        line-height: 1;
+      }
+      a {
+        font-size: 0.9rem;
+        margin-bottom: 4px;
+      }
+      p {
+        font-size: 0.7rem;
+      }
+    }
+    svg {
+      height: 24px;
     }
   }
 }
